@@ -4,20 +4,23 @@
 
 <?php
 
-$poker = array();
+$poker = $temp = array();
 for ($i = 0; $i < 52; $i++) {
-    $poker[$i] = $i;
-
+    $temp[$i] = $i;
 }
 
-// foreach($poker as $j => $value){
-//     echo "{$j} : {$value} <br />";
-// }
+for($i = 0; $i<52 ; $i ++){
+    $index = rand(0,51-$i);
+    $poker[$i] = $temp[$index];
+    unset($temp[$index]);
+    $temp = array_values($temp);
+    echo var_dump($temp);
+}
 
-
-// for ($i = 0; $i < 52; $i++) {
-//     $poker[]
-// }
+foreach($poker as $i => $v){
+    echo "{$i}:{$v} <br/>";
+}
 
 
 ?>
+
