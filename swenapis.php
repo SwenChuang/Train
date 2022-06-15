@@ -67,6 +67,34 @@
         return $tempId;
     }
 
+    class Student{
+
+        private $name, $math, $eng, $ch;
+
+        function __construct($name, $math, $eng, $ch){
+            $this->name = $name;
+            $this->math = $math;
+            $this->eng = $eng; 
+            $this->ch = $ch;
+        }
+
+        function getName(){
+            return $this->name;
+        }
+
+        function avgScore(){
+            return $this->sumScore()/3;
+        }
+
+        function sumScore(){
+            return $this->ch + $this-> math + $this->eng;
+        }
+
+
+    }
+
+
+
 
 ?>
 
