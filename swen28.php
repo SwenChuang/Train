@@ -14,7 +14,7 @@
     echo '<hr/>';
 
     function changeB(&$c){
-        $c = 111;
+        $c = 0;
     }
 
     $b = 1111;
