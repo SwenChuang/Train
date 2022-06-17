@@ -90,6 +90,9 @@
             return $this->ch + $this-> math + $this->eng;
         }
 
+        function setMath($math){
+            return $this-> math = $math;
+        }
 
     }
 
