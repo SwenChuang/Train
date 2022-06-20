@@ -5,6 +5,8 @@
         require_once $className . '.php';
     }); //自動載類別 *************************************
 
+    session_start();
+
     if(isset($_REQUEST['account'])) header("Location:login.php");
 
     $account = $_REQUEST['account']; $passwd = $_REQUEST['passwd'];
@@ -13,6 +15,10 @@
     $stmt = $mysqli->prepare($sql);
     $stmt->bind_param('s',$account);
     $stmt->execute();
+
+
+    
+
 
     $result = $stmt->get_result();
     if($result->num_rows > 0){
@@ -27,5 +33,3 @@
     }else{
         header("Location:login.php");
     }
-
-?>
