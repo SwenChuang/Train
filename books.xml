@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book ispan='11223344' price='100'>
+        <title>PHP 大補帖</title>
+        <authors>
+            <author>Swen</author>
+            <author>Brad</author>
+        </authors>
+        <desc>
+            全世界最爛的書
+        </desc>
+    </book>
+
+
+    <book ispan='94871234' price='50'>
+        <title>PHP 鳥書</title>
+        <authors>
+            <author>Swen</author>
+        </authors>
+        <desc>
+            全世界最好的書
+        </desc>
+    </book>
+
+</books>
